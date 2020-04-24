@@ -121,12 +121,12 @@ section .entry {
     height: 2em;
     left: -5px;
     top: -5px;
-    border: 5px solid rgb(81, 179, 201);
+    border: 5px solid rgb(165, 230, 245);
     box-shadow: 0 0 10px 5px rgba(51, 110, 123, 1) inset,
         0 0 10px 5px rgba(51, 110, 123, 1);
     border-radius: 20px;
-    color: rgb(81, 179, 201);
-    text-shadow: 0 0 20px rgb(112, 204, 224);
+    color: rgb(165, 230, 245);
+    text-shadow: 0 0 20px rgb(165, 230, 245);
     opacity: 0;
     animation: neonlight 5s ease infinite;
 }
@@ -206,5 +206,57 @@ section .entry {
 @keyframes caret {
     50% {
         border-color: transparent;
+    }
+}
+
+#colorbutton {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#colorbutton div:nth-child(1) {
+    position: relative;
+    width: 300px;
+    height: 80px;
+    border-radius: 150px;
+    background: linear-gradient(to left, #c23616, #192a56, #00d2d3, yellow, #6d214f, #2e86de, #4cd137, #e84118);
+    background-size: 400%;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 80px;
+    color: white;
+    z-index: 0;
+}
+#colorbutton div:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 80px;
+    border-radius: 150px;
+    background: linear-gradient(to left, #c23616, #192a56, #00d2d3, yellow, #6d214f, #2e86de, #4cd137, #e84118);
+    background-size: 400%;
+    color: white;
+    transition: .5s;
+    z-index: -1;
+}
+
+#colorbutton div:nth-child(1):hover{
+    cursor: pointer;
+    animation: colorbutton 15s linear infinite alternate;
+}
+#colorbutton div:nth-child(1):hover::before{
+    filter: blur(20px);
+    animation: colorbutton 15s linear infinite alternate;
+}
+@keyframes colorbutton{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%;
     }
 }
