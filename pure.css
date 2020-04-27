@@ -246,11 +246,11 @@ section .entry {
 
 #colorbutton div:nth-child(1):hover{
     cursor: pointer;
-    animation: colorbutton 15s linear infinite alternate;
+    animation: colorbutton 10s linear infinite alternate;
 }
 #colorbutton div:nth-child(1):hover::before{
     filter: blur(20px);
-    animation: colorbutton 15s linear infinite alternate;
+    animation: colorbutton 10s linear infinite alternate;
 }
 @keyframes colorbutton{
     0%{
@@ -328,4 +328,58 @@ section .entry {
     100%{
         transform: rotateZ(450deg);
     }
+}
+
+#wechat{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#wechat div:nth-child(1){
+    position: relative;
+    width: 500px;
+    height: 420px;
+    background-color: transparent;
+    background-image: radial-gradient( circle at 34% 35%, grey 8px,transparent 8px),
+    radial-gradient( circle at 45% 35%, grey 8px,transparent 8px),
+    radial-gradient( circle at 48% 46%, grey 6px,transparent 6px),
+    radial-gradient( circle at 57% 46%, grey 6px,transparent 6px),
+    radial-gradient(at 53% 50%, rgb(219, 221, 220) 65px,transparent 65px),
+    radial-gradient(at 40% 40%, rgb(31,206,87) 80px,transparent 80px);
+}
+
+#wechat div:nth-child(1)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 180px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 50px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgba(31,206,87, 1);
+    border-right: 50px solid transparent;
+    transform: skewX(-20deg) skewY(-50deg) rotateZ(0deg);
+    border-radius: 20px;
+}
+
+#wechat div:nth-child(1)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 165px;
+    left: 190px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 50px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 50px solid rgb(219, 221, 220);
+    transform: skewX(30deg) skewY(40deg);
+    border-radius: 20px;
 }
