@@ -426,12 +426,6 @@ section .entry {
     bottom: 65%;
     left: 0px;
     background-color: rgb(28,147,75);
-    /*transform: skewX(-30deg) translateX(19px);*/
     transform: scaleX(1.03) scaleY(1.03) translateX(4.7px);
     clip-path: polygon(50% 0,0 100%, 100% 100%);
-
-    /*background-image: linear-gradient(30deg,rgb(28,147,75) 50%,transparent 0);
-    border-bottom:  calc() solid white;
-    border-right:  21px solid transparent;
-    border-left:  22px solid transparent;*/
 }
