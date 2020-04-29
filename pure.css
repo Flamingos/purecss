@@ -56,6 +56,31 @@ section .entry {
     border-left: 100px solid rgba(30, 139, 195, 1);
     border-right: 100px solid rgba(137, 196, 244, 1);
 }
+#triangle div:nth-child(1):hover{
+    animation: triangle 1.3s linear;
+}
+@keyframes triangle{
+    20%{
+        border-top: 30px solid rgba(44, 130, 201, 1);
+        border-bottom: 170px solid rgba(0, 181, 204, 1);
+    }
+    40%{
+        border-left: 30px solid rgba(30, 139, 195, 1);
+        border-right: 170px solid rgba(137, 196, 244, 1);
+    }
+    60%{
+        border-top: 170px solid rgba(44, 130, 201, 1);
+        border-bottom: 30px solid rgba(0, 181, 204, 1);
+    }
+    80%{
+        border-left: 170px solid rgba(30, 139, 195, 1);
+        border-right: 30px solid rgba(137, 196, 244, 1);
+    }
+    100%{
+        border-top: 100px solid rgba(44, 130, 201, 1);
+        border-bottom: 100px solid rgba(0, 181, 204, 1);
+    }
+}
 
 #spotlight-text {
     background-color: #222;
@@ -500,5 +525,82 @@ section .entry {
         0 0 0 300px #222,0 0 0 302px rgb(50, 197, 78),
         0 0 0 400px #222,0 0 0 402px rgb(50, 197, 78),
         0 0 0 500px #222,0 0 0 502px rgb(50, 197, 78);
+    }
+}
+
+#safari{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#safari div:nth-child(1){
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-color: rgb(238, 162, 162);
+    background-image: radial-gradient(circle at center,transparent 69%,rgb(6, 79, 168) 69%,rgb(4, 68, 146) 80%),
+    radial-gradient(circle at center,rgb(22,148,186) 0,rgb(57, 139, 240) 55%,transparent 0),
+    linear-gradient(to right,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(to bottom,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(11.25deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(22.5deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(33.75deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(45deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(56.25deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(67.5deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(78.75deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-11.25deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-22.5deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-33.75deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-45deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-56.25deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-67.5deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-78.75deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    radial-gradient(circle at center,rgb(57, 139, 240) 55%,rgb(17, 101, 204) 63%,transparent 0),
+    linear-gradient(5.625deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(16.875deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(28.125deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(39.375deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(50.625deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(61.875deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(73.125deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(84.375deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-5.625deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-16.875deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-28.125deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-39.375deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-50.625deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-61.875deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-73.125deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    linear-gradient(-84.375deg,transparent 50%,#d3d3d3 50%,#d3d3d3 51%,transparent 51%),
+    radial-gradient(circle at center,rgb(17, 101, 204) 63%,rgb(6, 79, 168) 69%,transparent 0);
+    box-shadow: 0 0 5px rgb(0, 0, 0,0.5) inset;
+}
+
+#safari div:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 13px solid rgb(255,53,58);
+    border-bottom: 13px solid rgb(157,155,155);
+    border-left: 50px solid rgb(235,235,236);
+    border-right: 50px solid rgb(198,0,1);
+    transform-origin: center;
+    transform: translateX(-50%) translateY(-50%) rotateZ(-38deg) skewX(-75deg) scale(0.9);
+    box-shadow: 3px 1px 1px black;
+}
+
+#safari div:nth-child(1):hover::before{
+    animation: safari 1s ease-in-out infinite alternate;
+}
+
+@keyframes safari{
+    100%{
+        transform: translateX(-50%) translateY(-50%) rotateZ(30deg) skewX(-75deg) scale(0.9);
     }
 }
