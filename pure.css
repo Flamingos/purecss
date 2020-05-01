@@ -604,3 +604,107 @@ section .entry {
         transform: translateX(-50%) translateY(-50%) rotateZ(30deg) skewX(-75deg) scale(0.9);
     }
 }
+
+#watch{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#watch div:nth-child(1){
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(222,225,225);
+    background-image: radial-gradient(circle at 32.5% 28.2%,rgb(222,225,225) 2.5%,transparent 0),
+    radial-gradient(circle at 67.5% 28.2%,rgb(222,225,225) 2.5%,transparent 0),
+    radial-gradient(circle at 32.5% 72.2%,rgb(222,225,225) 2.5%,transparent 0),
+    radial-gradient(circle at 67.5% 72.2%,rgb(222,225,225) 2.5%,transparent 0),
+    linear-gradient(to right,transparent 35%,rgb(216,64,60) 35%,rgb(216,64,60) 45%, transparent 0),
+    linear-gradient(to right,transparent 35%,rgb(222,225,225) 45%,rgb(222,225,225) 55%, transparent 0),
+    linear-gradient(to right,transparent 35%,rgb(38,61,73) 55%,rgb(38,61,73) 65%, transparent 0),
+    linear-gradient(rgb(128,208,236) 28%,transparent 28%,transparent 72%,rgb(128,208,236) 0),
+    linear-gradient(to right,rgb(128,208,236) 30%,transparent 30%,transparent 70%, rgb(128,208,236) 0);
+}
+
+#watch div:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: rgb(222,225,225) solid 6px;
+    border-radius: 50%;
+    background-color: rgb(193,198,200);
+    background-image: radial-gradient(circle at 30.3% 30.3%,rgb(38,61,73) 3.57%,transparent 0),
+    radial-gradient(circle at 25% 75%,rgb(212,87,83) 1.7%,transparent 0),
+    radial-gradient(circle at 62% 38%,rgb(212,87,83) 2.1%,transparent 0),
+    radial-gradient(circle at center,rgb(38,61,73) 6%,transparent 0),
+    radial-gradient(circle at center,rgb(222,225,225) 12%,transparent 0),
+    radial-gradient(circle at 49% 51%,rgb(0,0,0,.5) 12%,transparent 0),
+    linear-gradient(45deg,rgb(193,198,200) 25%,transparent 25%,transparent 62%,rgb(193,198,200) 0),
+    linear-gradient(-45deg,transparent 48.7%,rgb(212,87,83) 48.7%,rgb(212,87,83) 51.3%,transparent 0),
+    linear-gradient(-45deg,rgb(193,198,200) 50%,transparent 50%,transparent 70%,rgb(193,198,200) 0),
+    linear-gradient(45deg,transparent 47.5%,rgb(38,61,73) 47.5%,rgb(38,61,73) 52.5%,transparent 0);
+    box-shadow: inset -2px 1px 0 1px rgb(169,173,175);
+}
+
+#watch div:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(13%) translateY(-50%);
+    border-radius: 10px;
+    background-color: rgb(38,61,73);
+    background-image: radial-gradient(circle at -10% 50%,rgb(222,225,225) 20%,transparent 0);
+}
+
+#match{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#match div:nth-child(1){
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(56,109,143);
+    background-image: radial-gradient(ellipse at 50% 83.3%,rgb(234,188,76) 4.3%,transparent 0),
+    linear-gradient(to right,rgb(56,109,143) 47%,transparent 47%,transparent 53%,rgb(56,109,143) 0),
+    linear-gradient(to top,rgb(233,188,76) 18%,rgb(50,67,77) 18%,rgb(50,67,77) 28%,transparent 0);
+}
+
+#match div:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 120px;
+    left: 50%;
+    top: 13%;
+    transform: translateX(-50%);
+    background-color: rgb(277,136,70);
+    border-radius: 130px/300px 300px 140px 140px;
+    box-shadow: 0 16px 0 16px rgb(234,189,77) inset;
+}
+
+#match div:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 42px;
+    left: 50%;
+    top: 53%;
+    transform: translateX(-50%);
+    background-color: rgb(33,50,60);
+    border-radius: 140px/140px 140px 300px 300px;
+}
