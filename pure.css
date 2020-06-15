@@ -42,7 +42,7 @@ section .entry {
 }
 
 #triangle {
-    background-color: slategrey;
+    background-color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -914,4 +914,48 @@ section .entry {
     font-size: .3em;
     line-height: 60px;
     color: white;
+}
+
+#stockmarket{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stockmarket>div:nth-child(1){
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(89, 92, 95);
+    background-image: linear-gradient(to right,black 15%,rgb(89, 92, 95) 15%,rgb(89, 92, 95) 17%,black 17%,black 32%,rgb(89, 92, 95) 32%,rgb(89, 92, 95) 34%,black 34%,black 49%,rgb(89, 92, 95) 49%,rgb(89, 92, 95) 51%,black 51%,black 66%,rgb(89, 92, 95) 66%,rgb(89, 92, 95) 68%,black 68%,black 83%,rgb(89, 92, 95) 83%,rgb(89, 92, 95) 85%,black 0);
+    transform: rotateZ(-10deg);
+}
+
+#stockmarket>div:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255,.5),transparent);
+    clip-path: polygon(0 55%,5% 55%,16% 60%,23% 37%,26% 42%,33% 41%,35% 50%,42% 35%,50% 32%,55% 42%,60% 43%,67% 60%,72% 46%,77% 48%,84% 38%,90% 48%,100% 53%,100% 100%,0 100%);
+}
+
+#stockmarket>div:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    clip-path: polygon(0 55%,5% 55%,16% 60%,23% 37%,26% 42%,33% 41%,35% 50%,42% 35%,50% 32%,55% 42%,60% 43%,67% 60%,72% 46%,77% 48%,84% 38%,90% 48%,100% 53%,
+                       100% 55%,90% 50%,84% 40%,77% 50%,72% 48%,67% 62%,60% 45%,55% 44%,50% 34%,42% 37%,35% 52%,33% 43%,26% 44%,23% 39%,16% 62%,5% 57%,0 57%);
+}
+
+#stockmarket>div:nth-child(1)>div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(circle at 67% 58%,rgb(15,188,255) 4%,black 4%,black 5%,transparent 0),
+    linear-gradient(to right,transparent 66%,rgb(15,188,255) 66%,rgb(15,188,255) 68%,transparent 0);
+    z-index: 100;
 }
