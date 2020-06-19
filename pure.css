@@ -1079,3 +1079,63 @@ section .entry {
     background-color: rgb(255, 251, 0);
     transform: translateX(-50%) translateY(-50%);
 }
+
+#baiducloud{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#baiducloud >div:nth-child(1){
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: white;
+    background-image: radial-gradient(circle at center,rgb(53,194,255) 10%,transparent 0),
+    radial-gradient(circle at 68% 57%,transparent 12%,rgb(53,194,255) 12%,rgb(53,194,255) 20%,transparent 0),
+    radial-gradient(circle at 32% 57%,transparent 12%,rgb(53,194,255) 12%,rgb(53,194,255) 20%,transparent 0),
+    linear-gradient(to bottom,white 93%,transparent 0),
+    linear-gradient(to right,transparent 30%,rgb(250,33,82) 30%,rgb(250,33,82) 50%,rgb(17,112,255) 50%,rgb(17,112,255) 70%,transparent 0);
+}
+
+#baiducloud >div:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    left: calc(50% - 36px);
+    top: 16%;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-radius: 50%;
+    border-bottom: 14px solid rgb(251,65,101);
+    border-top: 14px solid rgb(53,194,255);
+    border-left: 14px solid rgb(53,194,255);
+    border-right: 14px solid rgb(251,65,101);
+    transform-origin: 50% 50%;
+    transform: rotateZ(45deg);
+}
+
+#baiducloud >div:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    left: calc(45% + 0px);
+    top: calc(45% + 6px);
+    width: 34px;
+    height: 50px;
+    background-image: linear-gradient(to right,rgb(53,194,255) 14px,white 0);
+    transform: rotateZ(38deg);
+}
+
+#baiducloud >div:nth-child(1)>div:nth-child(1){
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 64px 62px 0 0 rgb(251,65,101),
+    122px 62px 0 0 rgb(251,65,101),
+    110px 128px 0 0 rgb(53,194,255);
+    z-index: 1;
+}
